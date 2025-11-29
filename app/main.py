@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Car:
     def __init__(
         self,
@@ -34,7 +35,7 @@ class CarWashStation:
 
         return round(cost, 1)
 
-    def wash_single_car(self, car) -> None:
+    def wash_single_car(self, car: Car) -> None:
         if self.clean_power > car.clean_mark:
             car.clean_mark = self.clean_power
 
